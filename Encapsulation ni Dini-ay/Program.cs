@@ -11,17 +11,30 @@ namespace Encapsulation_ni_Dini_ay
     {
         static void Main(string[] args)
         {
-            
-
+        INPUT:
+            //Input Radius
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Clear();
+            Console.WriteLine();
             Console.Write("\t Enter circle radius: ");
             Circle lingin = new Circle(Convert.ToDouble(Console.ReadLine()));
-            
+
+
+
+            //Result
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Clear();
+            Console.WriteLine();
             Console.WriteLine($"\t Radius: {lingin.Radius}");
             Console.WriteLine($"\t Perimeter: {lingin.CalculatePerimeter():F2}");
             Console.WriteLine($"\t Area: {lingin.CalculateArea():F2}");
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("Press Enter to input another radius  ");
             Console.ReadLine();
+
+            goto INPUT;
 
             
         }
