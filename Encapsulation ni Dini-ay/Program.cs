@@ -11,11 +11,12 @@ namespace Encapsulation_ni_Dini_ay
     {
         static void Main(string[] args)
         {
+            // encapuslation
 
             Console.Write("\t Enter circle radius: ");
             Circle lingin = new Circle(Convert.ToDouble(Console.ReadLine()));
             
-
+            
             Console.WriteLine($"\t Radius: {lingin.Radius}");
             Console.WriteLine($"\t Perimeter: {lingin.CalculatePerimeter():F2}");
             Console.WriteLine($"\t Area: {lingin.CalculateArea():F2}");
